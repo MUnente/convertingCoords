@@ -12,7 +12,7 @@
     Valores negativos: Latitude = SUL/SOUTH (baixo) | Longitude: OESTE/WEST (direita)
 */
 
-const showDMSByDD = dd => {
+const convertDDToDMS = dd => {
     dd = dd.split(' ');
 
     const latitude = convert(dd[0]);
@@ -48,7 +48,7 @@ const showDMSByDD = dd => {
     return obj;
 };
 
-const showDDByDMS = dms => {
+const convertDMSToDD = dms => {
     dms = dms.split(/ /);
 
     const latitude = convert(dms[0]);
@@ -73,5 +73,5 @@ const showDDByDMS = dms => {
     return obj;
 };
 
-// console.log(showDMSByDD(`29.761833, -95.351722`));
-console.log(showDDByDMS(`29°45'42.6"N 95°21'6.2"W`));
+// console.log(convertDDToDMS(`29.761833, -95.351722`));
+console.log(convertDMSToDD(`29°45'42.6"N 95°21'6.2"W`));
