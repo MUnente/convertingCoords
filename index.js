@@ -12,7 +12,7 @@
     Valores negativos: Latitude = SUL/SOUTH (baixo) | Longitude: OESTE/WEST (direita)
 */
 
-const showDMSByDD = (dd) => {
+const showDMSByDD = dd => {
     dd = dd.split(' ');
 
     const latitude = convert(dd[0]);
@@ -48,7 +48,7 @@ const showDMSByDD = (dd) => {
     return obj;
 };
 
-const showDDByDMS = (dms) => {
+const showDDByDMS = dms => {
     dms = dms.split(/ /);
 
     const latitude = convert(dms[0]);
