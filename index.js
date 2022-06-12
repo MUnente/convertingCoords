@@ -73,5 +73,5 @@ const showDDByDMS = (dms) => {
     return obj;
 };
 
-// console.log(showDMSByDD(`-22.996531, -47.501209`));
-console.log(showDDByDMS(`22°59'47.5"S 47°30'4.4"W`));
+// console.log(showDMSByDD(`29.761833, -95.351722`));
+console.log(showDDByDMS(`29°45'42.6"N 95°21'6.2"W`));
